@@ -1,4 +1,4 @@
-package com.yduf149.messages;
+package com.rhul.messages;
 
 import android.Manifest;
 import android.content.BroadcastReceiver;
@@ -19,31 +19,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
-import com.google.android.gms.wearable.DataItem;
 import com.google.android.gms.wearable.Node;
-import com.google.android.gms.wearable.PutDataMapRequest;
-import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
 
 import java.util.List;
 
+/**
+ * @Testcase_name Messages Client API - Handheld app
+ * @author Marcos Tileria
+ * @desciption  the handheld app sends a message to the wearable app with sensitive information
+ * and then the wearable app return the value to the handheld
+ */
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "mobile-app";
     private static final int REQUEST_READ_PHONE_STATE = 1;
-    private static final String DEVICE_KEY = "device";
     protected Handler myHandler;
     Button talkButton;
     TextView textView;
-    Button secButton;
-    TextView secTextView;
-    int sentMessageNumber = 1;
-    String imeiNo;
-    int counter = 0;
+    TextView textViewReply;
+    String deviceID;
 
 
 
@@ -53,25 +51,36 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         talkButton = findViewById(R.id.talkButton);
         textView = findViewById(R.id.textView);
-        secButton = findViewById(R.id.syncButton);
-        secTextView = findViewById(R.id.textViewSync);
+        textViewReply = findViewById(R.id.textViewReply);
+
 
 
         myHandler = new Handler(new Handler.Callback() {
             @Override
             public boolean handleMessage(Message msg) {
-                Log.d(TAG, "Create a handlerMsg");
-                Bundle stuff = msg.getData();
-                //messageText(stuff.getString("messageText"));
-                String newInfo = stuff.getString("messageText");
-                if (newInfo.compareTo("") != 0) {
-                    Log.d(TAG, "newInfo");
+                Bundle msgData = msg.getData();
+
+                if (msgData.getString("text_view")!= null){
+                    String newInfo = msgData.getString("text_view");
                     textView.append("\n" + newInfo);
+
+                }else if(msgData.getString("text_reply")!= null){
+                    String newInfo = msgData.getString("text_reply");
+                    textViewReply.append("\n" + newInfo);
                 }
                 return true;
             }
         });
 
+        getSensitiveInformation();
+        IntentFilter messageFilter = new IntentFilter(Intent.ACTION_SEND);
+        Receiver messageReceiver = new Receiver();
+        LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver, messageFilter);
+
+
+    }
+
+    private void getSensitiveInformation(){
         int statePermissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_PHONE_STATE);
         if (statePermissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -79,35 +88,22 @@ public class MainActivity extends AppCompatActivity {
                     new String[]{Manifest.permission.READ_PHONE_STATE}, REQUEST_READ_PHONE_STATE);
         }
         TelephonyManager TM = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        imeiNo = TM.getImei();
+        deviceID = TM.getImei();
 
-
-        IntentFilter messageFilter = new IntentFilter(Intent.ACTION_SEND);
-        Receiver messageReceiver = new Receiver();
-        LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver, messageFilter);
     }
-
 
     public void talkClick(View v) {
-        Log.d(TAG, "On talkClick");
-        textView.setText("Sending message.... ");
-        new NewThread("/my_path", imeiNo,"message").start();
+        textView.setText("Sending message to wearable ");
+        new NewThread("/my_path", deviceID).start();
 
     }
 
-    public void syncClick(View view) {
-        Log.d(TAG, "On SynClick");
-        secTextView.setText("Synchronizing item .... ");
-        imeiNo = imeiNo + Integer.toString(++counter);
-        new NewThread("/sync", imeiNo,"dataItem").start();
-    }
 
-
-    // update UI
-    public void sendMessageUI(String messageText) {
-        Log.d(TAG, "On sendMessageUI");
+    // Send a message to the Handler
+    public void updateUI(String type , String messageText) {
         Bundle bundle = new Bundle();
-        bundle.putString("messageText", messageText);
+        String t = (type.compareTo("text_view")==0) ? "text_view": "text_reply";
+        bundle.putString(t, messageText);
         Message msg = myHandler.obtainMessage();
         msg.setData(bundle);
         myHandler.sendMessage(msg);
@@ -117,36 +113,31 @@ public class MainActivity extends AppCompatActivity {
     public class Receiver extends BroadcastReceiver {
 
         @Override
-        // Upon receiving the reply from the wearable
         public void onReceive(Context context, Intent intent) {
-            Log.d(TAG, "On-receive");
-            String message = "I just received mi Id  back from the wearable "
-                    + intent.getStringExtra("message");
-            textView.setText(message);
+            String text = "I just received mi Id  back from the wearable:";
+            String reply = intent.getStringExtra("reply");
+            updateUI("text_reply",text + reply);
+            writeToLog(reply);
         }
+    }
+
+    private void writeToLog(String reply) {
+        Log.i("INFO",reply);
     }
 
     class NewThread extends Thread {
         String path;
         String message;
-        String type;
 
-        NewThread(String p, String m, String t) {
+        NewThread(String p, String m) {
             path = p;
             message = m;
-            type = t;
         }
 
         public void run() {
-
-            Log.d(TAG, "in-run");
             Task<List<Node>> wearableList =
                     Wearable.getNodeClient(getApplicationContext())
                             .getConnectedNodes();
-
-            switch(type){
-
-                case "message":
                     try {
 
                         List<Node> nodes = Tasks.await(wearableList);
@@ -154,51 +145,14 @@ public class MainActivity extends AppCompatActivity {
                             Task<Integer> sendMessageTask = Wearable.getMessageClient(MainActivity.this)
                                     .sendMessage(node.getId(), path, message.getBytes());
 
-                            try {
                                 //Block on a task and get the result synchronously
-
                                 Integer result = Tasks.await(sendMessageTask);
-                                sendMessageUI("I just sent the wearable a message " + sentMessageNumber++);
-
-                            } catch (Exception exception) {
-
-                                //TO DO: Handle the exception
-
-                            }
-
+                                updateUI("text_view",
+                                        "I just sent my id to the wearable");
                         }
-
                     } catch (Exception exception) {
-
                         //TO DO: Handle the exception
-
                     }
-                    break;
-
-                case "dataItem":
-                    Log.d(TAG,"updateDataItem");
-
-                    PutDataMapRequest putDataMapReq = PutDataMapRequest.create(path);
-                    putDataMapReq.getDataMap().putString(DEVICE_KEY, imeiNo);
-                    PutDataRequest putDataReq = putDataMapReq.asPutDataRequest();
-                    putDataReq.setUrgent();
-
-                    Task<DataItem> putDataTask = Wearable.getDataClient(MainActivity.this)
-                            .putDataItem(putDataReq);
-
-                    putDataTask.addOnSuccessListener(
-                            new OnSuccessListener<DataItem>() {
-                                @Override
-                                public void onSuccess(DataItem dataItem) {
-                                    Log.d(TAG, "leaking data ... " + dataItem);
-                                    secTextView.setText(imeiNo);
-                                }
-                            });
-
-                    break;
-
-            }
-
 
         }
     }

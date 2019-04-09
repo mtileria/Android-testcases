@@ -1,4 +1,4 @@
-package com.yduf149.messages;
+package com.rhul.messages;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.yduf149.messages", appContext.getPackageName());
+        assertEquals("com.rhul.messages", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.yduf149.messages;
+package com.rhul.messages;
 
 import org.junit.Test;
 
