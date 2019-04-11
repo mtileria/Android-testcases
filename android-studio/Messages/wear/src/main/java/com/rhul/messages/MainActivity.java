@@ -18,29 +18,21 @@ import java.util.List;
 
 /**
  * @Testcase_name Messages Client API - Wear app
- * @author Marcos Tileria  mtileria@gmail.com
- * @desciption  the handheld app sends a message to the wearable app with sensitive information
- * and then the wearable app return the value to the handheld
+ * @author Marcos Tileria  <mtileria@gmail.com>
+ * @description  the handheld app sends a message to the wearable app with sensitive information
+ * and then the wearable app send another message to the handheld
  */
 public class MainActivity extends WearableActivity {
 
-    private static final String TAG = "wear-app";
     private TextView textView;
-    private TextView tittle;
 
-    private final Receiver messageReceiver = new Receiver();;
+    private final Receiver messageReceiver = new Receiver();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(TAG, ",on create");
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.text);
-        tittle = findViewById(R.id.name);
-        tittle.setText("Test-app");
-
-
 
         IntentFilter newFilter = new IntentFilter(Intent.ACTION_SEND);
         LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver, newFilter);

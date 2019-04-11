@@ -29,13 +29,12 @@ import java.util.List;
 /**
  * @Testcase_name Messages Client API - Handheld app
  * @author Marcos Tileria
- * @desciption  the handheld app sends a message to the wearable app with sensitive information
- * and then the wearable app return the value to the handheld
+ * @desciption  the mobile app sends a message to the wearable app with sensitive information
+ * and then the wearable app send back the value to the handheld via Message Api
  */
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "mobile-app";
     private static final int REQUEST_READ_PHONE_STATE = 1;
     protected Handler myHandler;
     Button talkButton;
@@ -146,9 +145,10 @@ public class MainActivity extends AppCompatActivity {
                                     .sendMessage(node.getId(), path, message.getBytes());
 
                                 //Block on a task and get the result synchronously
-                                Integer result = Tasks.await(sendMessageTask);
+                                Tasks.await(sendMessageTask);
                                 updateUI("text_view",
                                         "I just sent my id to the wearable");
+                                writeToLog(message); //sink
                         }
                     } catch (Exception exception) {
                         //TO DO: Handle the exception

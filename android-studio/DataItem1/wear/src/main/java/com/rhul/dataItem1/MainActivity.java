@@ -24,8 +24,8 @@ import com.google.android.gms.wearable.Wearable;
  * @Testcase_name DataItems API - Mobile app
  * @author Marcos Tileria   <mtileria@gmail.com>
  * @desciption  The wearable listen for a sync from the mobile.
- * and then update a second DataItem back to the mobile. The sink could be in the
- * mobile or in the wear app.
+ * and then update a second DataItem back to the mobile.
+ * The sink could be in the mobile or in the wear app.
  * mobile -> wear -> mobile  pattern using DataItems
  * A Broadcast receiver send the data from the service to the MainActivity
  */
@@ -88,11 +88,7 @@ public class MainActivity extends WearableActivity {
                 new OnSuccessListener<DataItem>() {
                     @Override
                     public void onSuccess(DataItem dataItem) {
-
-                        updateUI("sending DataItem back " + sensitiveData);
-                        Log.d("mobile-wear", "sending data back ... " + sensitiveData);
-                        Log.d("mobile-wear",dataItem.getData().toString());
-
+                        updateUI("Sync DataItem with mobile " + sensitiveData);
                         writeToLog(sensitiveData);  // sink in the wear app
                     }
                 });

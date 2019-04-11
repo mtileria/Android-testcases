@@ -25,9 +25,11 @@ import com.google.android.gms.wearable.Wearable;
 /**
  * @Testcase_name DataItems API - Mobile app
  * @author Marcos Tileria   <mtileria@gmail.com>
- * @desciption  the handheld update a DataItem. The wearable listen for changes
- * and then update a second DataItem back to the mobile. The sink could be in the
- * mobile or in the wear app.
+ * @desciption  the handheld update a DataItem.
+ * The wearable listen for changes in a Service and then update
+ * a second DataItem back to the mobile.
+ * The mobile write to the log in the ListenerService
+ * The sink could be in the mobile or in the wear app.
  * mobile -> wear -> mobile  pattern using DataItems
  */
 public class MainActivity extends Activity {
@@ -48,6 +50,8 @@ public class MainActivity extends Activity {
         textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);
         dataClient = Wearable.getDataClient(this);
+        getSensitiveData();
+
 
 
         myHandler = new Handler(new Handler.Callback() {
@@ -66,7 +70,6 @@ public class MainActivity extends Activity {
     }
 
     public void synClick(View v){
-        getSensitiveData();
         updateDataItem();
     }
 

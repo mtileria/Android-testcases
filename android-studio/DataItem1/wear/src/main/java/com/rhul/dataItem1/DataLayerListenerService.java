@@ -12,6 +12,11 @@ import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.WearableListenerService;
 
+/**
+ * Listen for changes in DataItems from the mobile app with the
+ * path /sync (defined in the Manifest)
+ * Send a broadcast to the MainActivity to inform changes on DataItems
+ */
 public class DataLayerListenerService extends WearableListenerService {
 
     final static String TAG = "wear-service";
