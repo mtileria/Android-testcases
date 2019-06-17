@@ -10,6 +10,7 @@ import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -50,7 +51,7 @@ public class MainActivity extends Activity {
         textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);
         dataClient = Wearable.getDataClient(this);
-        getSensitiveData();
+        imeiNo =  getSensitiveData();
 
 
 
@@ -73,7 +74,7 @@ public class MainActivity extends Activity {
         updateDataItem();
     }
 
-    private void getSensitiveData() {
+    private String getSensitiveData() {
 
         int statePermissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_PHONE_STATE);
@@ -83,7 +84,7 @@ public class MainActivity extends Activity {
                     REQUEST_READ_PHONE_STATE);
         }
         TelephonyManager TM = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-        imeiNo = TM.getImei();
+        return imeiNo = TM.getImei();
     }
 
 
@@ -97,6 +98,8 @@ public class MainActivity extends Activity {
         putDataReq.setUrgent();
 
         Task<DataItem> putDataTask = dataClient.putDataItem(putDataReq);
+        Log.i("leak",imeiNo);
+
 
         putDataTask.addOnSuccessListener(
                 new OnSuccessListener<DataItem>() {

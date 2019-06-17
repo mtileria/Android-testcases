@@ -1,0 +1,18 @@
+% Non wear APIs (2sources,2sinks)
+<android.telephony.TelephonyManager: java.lang.String getImei()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()> -> _SOURCE_
+<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int d(java.lang.String,java.lang.String)> -> _SINK_
+
+% New DataClient API (1s,1s)
+<com.google.android.gms.wearable.DataClient: com.google.android.gms.tasks.Task putDataItem(com.google.android.gms.wearable.PutDataRequest)> -> _SINK_
+<com.google.android.gms.wearable.DataMap: java.lang.String getString(java.lang.String)> -> _SOURCE_
+
+% New MessageClient API (1s,1s)
+<com.google.android.gms.wearable.MessageClient: com.google.android.gms.task.Task sendMessage(java.lang.String,java.lang.String,byte[])> -> _SINK_
+<com.google.android.gms.wearable.MessageEvent: byte[] getData()> -> _SOURCE_
+
+
+% Old Data Layer API (0s,4s)
+<com.google.android.gms.wearable.DataApi: com.google.android.gms.common.api.PendingResult putDataItem(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.wearable.PutDataRequest)> -> _SINK_
+<com.google.android.gms.wearable.MessageApi: com.google.android.gms.common.api.MessageApi.PendingResult sendMessage(com.google.android.gms.common.api.GoogleApiClient,java.lang.String, java.lang.String, byte[])> -> _SINK_

@@ -33,11 +33,8 @@ public class DataLayerListenerService extends WearableListenerService {
                     Intent dataIntent = new Intent();
                     dataIntent.setAction(Intent.ACTION_SEND);
                     dataIntent.putExtra("secret",secret);
-                    Log.d(TAG,secret);
                     LocalBroadcastManager.getInstance(this).sendBroadcast(dataIntent);
-
                 }
             }
     }
-
 }

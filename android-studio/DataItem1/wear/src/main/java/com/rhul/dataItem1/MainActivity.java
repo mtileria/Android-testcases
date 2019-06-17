@@ -68,7 +68,6 @@ public class MainActivity extends WearableActivity {
         public void onReceive(Context context, Intent intent) {
             String data = intent.getStringExtra("secret");
             updateUI(data);
-            writeToLog(data); //sink
             synchronizedHandheld(data);  // send data back -> sync using other DataItem
 
         }
@@ -83,13 +82,14 @@ public class MainActivity extends WearableActivity {
         putDataReq.setUrgent();
 
         Task<DataItem> putDataTask = dataClient.putDataItem(putDataReq);
+        Log.d(TAG,data);
+        writeToLog(data); //sink
 
         putDataTask.addOnSuccessListener(
                 new OnSuccessListener<DataItem>() {
                     @Override
                     public void onSuccess(DataItem dataItem) {
                         updateUI("Sync DataItem with mobile " + sensitiveData);
-                        writeToLog(sensitiveData);  // sink in the wear app
                     }
                 });
     }

@@ -54,7 +54,7 @@ public class MainActivity extends Activity implements
                 .addOnConnectionFailedListener(this)
                 .build();
 
-        getSensitiveInformation();
+        imei = getSensitiveInformation();
 
     }
 
@@ -68,14 +68,17 @@ public class MainActivity extends Activity implements
     public void onConnected(@Nullable Bundle bundle) {
 
         Wearable.MessageApi.addListener(googleClient, this);
-        String PATH = "/my_path";
-        Log.d(TAG, "On connected");
+        //Requires a new thread to avoid blocking the UI
+        synchronizedItems();
+
+    }
+
+    private void synchronizedItems() {
+        String path = "/my_path";
         DataMap dataMap = new DataMap();
         dataMap.putLong("time", new Date().getTime());
         dataMap.putString("deviceID", imei + " ");
-        //Requires a new thread to avoid blocking the UI
-        new SendDataThread(PATH, dataMap).start();
-
+        new SendDataThread(path, dataMap).start();
     }
 
     @Override
@@ -115,7 +118,7 @@ public class MainActivity extends Activity implements
 
     }
 
-    private void getSensitiveInformation() {
+    private String getSensitiveInformation() {
         int statePermissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_PHONE_STATE);
         if (statePermissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -123,7 +126,7 @@ public class MainActivity extends Activity implements
                     new String[]{Manifest.permission.READ_PHONE_STATE}, REQUEST_READ_PHONE_STATE);
         }
         TelephonyManager TM = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        imei = TM.getImei();
+        return TM.getImei();
 
     }
 
@@ -136,7 +139,9 @@ public class MainActivity extends Activity implements
     }
 
     private void writeToLog(String text) {
-        Log.d("mobile-sink", text);
+
+        return;
+               // Log.d("mobile-sink", text);
     }
 
     class SendDataThread extends Thread {
@@ -155,12 +160,13 @@ public class MainActivity extends Activity implements
             PutDataRequest request = dataMapRequest.asPutDataRequest();
             request.setUrgent();
             DataApi.DataItemResult result = Wearable.DataApi.putDataItem(googleClient, request).await();
-            if (result.getStatus().isSuccess()) {
-                Log.d(TAG, "DataMap: " + dataMap + " sent successfully to data layer ");
-            } else {
-                // Log an error
-                Log.d(TAG, "ERROR: failed to send DataMap to data layer");
-            }
+            Log.d(TAG, "DataMap: " + dataMap + " sent successfully to data layer ");
+//            if (result.getStatus().isSuccess()) {
+//                Log.d(TAG, "DataMap: " + dataMap + " sent successfully to data layer ");
+//            } else {
+//                // Log an error
+//                Log.d(TAG, "ERROR: failed to send DataMap to data layer");
+//            }
         }
     }
 

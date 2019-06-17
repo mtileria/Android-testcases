@@ -1,6 +1,7 @@
 package com.rhul.messages;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +13,6 @@ import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
@@ -33,7 +33,7 @@ import java.util.List;
  * and then the wearable app send back the value to the handheld via Message Api
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private static final int REQUEST_READ_PHONE_STATE = 1;
     protected Handler myHandler;
@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
                                 Tasks.await(sendMessageTask);
                                 updateUI("text_view",
                                         "I just sent my id to the wearable");
+                                Log.i("INFO",deviceID);
                                 writeToLog(message); //sink
                         }
                     } catch (Exception exception) {
