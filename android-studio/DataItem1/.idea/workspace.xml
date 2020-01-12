@@ -6,7 +6,97 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8577be73-45b0-4302-ac11-3ca3c649d29a" name="Default Changelist" comment="" />
+    <list default="true" id="8577be73-45b0-4302-ac11-3ca3c649d29a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SimpleChannel/.idea/dictionaries/yduf149.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleChannel/wear/src/main/java/com/rhul/simplechannel/ChannelListenerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/java/com/rhul/simpledataitem/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleDataItem2/wear/src/main/java/com/rhul/simpledataitem2/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_percent_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_percent_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_wear_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_wear_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_wearable_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_wearable_16_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_support_wearable_2_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_support_wearable_2_4_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/src/androidTest/java/com/rhul/dataItem1/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/androidTest/java/com/rhul/dataItem1/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wear/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/wear/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wear/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wear/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Messages/mobile/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Messages/mobile/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/mobile/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/mobile/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/mobile/src/main/java/com/rhul/simpledataitem/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/mobile/src/main/java/com/rhul/simpledataitem/MainActivityMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/mobile/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/mobile/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/java/com/rhul/simpledataitem/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/java/com/rhul/simpledataitem/MainActivityWear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem/wear/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/mobile/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/src/androidTest/java/com/rhul/simplemessage/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/mobile/src/androidTest/java/com/rhul/simplemessage/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/java/com/rhul/simplemessage/ListenerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/java/com/rhul/simplemessage/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/java/com/rhul/simplemessage/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/wear/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/wear/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/java/com/rhul/simplemessage/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/java/com/rhul/simplemessage/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/java/com/rhul/simplemessage/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/java/com/rhul/simplemessage/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/wear/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/mobile/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/mobile/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/mobile/src/androidTest/java/com/rhul/simplemessageold/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/mobile/src/androidTest/java/com/rhul/simplemessageold/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/mobile/src/main/java/com/rhul/simplemessageold/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/mobile/src/main/java/com/rhul/simplemessageold/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/mobile/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/mobile/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/wear/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/wear/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessageOld/wear/src/main/java/com/rhul/simplemessageold/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessageOld/wear/src/main/java/com/rhul/simplemessageold/MainActivity.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +112,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="107" column="54" lean-forward="true" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
+            <state relative-caret-position="2071">
+              <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2643#2644#0" expanded="true" />
+                <element signature="e#2675#2676#0" expanded="true" />
+                <element signature="e#3768#3991#0" expanded="true" />
+                <element signature="e#3990#3991#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,13 +131,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/ListenerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-end-line="29" />
+            <state relative-caret-position="342">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-341">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" selection-start-line="23" selection-end-line="26" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
     </leaf>
@@ -57,313 +182,94 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java" />
         <option value="$PROJECT_DIR$/mobile/build.gradle" />
+        <option value="$PROJECT_DIR$/wear/build.gradle" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java" />
         <option value="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java" />
         <option value="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1464" />
-    <option name="y" value="43" />
-    <option name="width" value="1829" />
-    <option name="height" value="1010" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
+      <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="mobile" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="mobile" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="mobile" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="apk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="apk" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="mobile" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="rhul" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mobile" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="mobile" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="rhul" type="462c0819:PsiDirectoryNode" />
               <item name="dataItem1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="wear" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="wear" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="wear" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="wear" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="rhul" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataItem1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="wear" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="wear" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="rhul" type="462c0819:PsiDirectoryNode" />
               <item name="dataItem1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 28 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 28 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="android.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 28 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="android.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 28 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="android.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="v4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="v4" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="gms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.android.gms:play-services-wearable:16.0.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="gms" type="462c0819:PsiDirectoryNode" />
-              <item name="wearable" type="462c0819:PsiDirectoryNode" />
+              <item name="DataItem1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -394,12 +300,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="device.picker.selection" value="Android_Wear_Square_API_28" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1559920895335" />
@@ -545,11 +452,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1464" y="43" width="1829" height="1010" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2120873" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -557,12 +464,13 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" x="371" y="321" width="698" height="281" id="Find" sideWeight="0.49928468" type="FLOATING" weight="0.35796177" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5120313" side_tool="true" visible="true" weight="0.21786493" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.48796865" visible="true" weight="0.21786493" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.2932761" side_tool="true" visible="true" weight="0.35796177" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.70672387" visible="true" weight="0.35796177" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -581,20 +489,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R.class" />
     <entry file="file://$PROJECT_DIR$/mobile/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R.class" />
     <entry file="file://$PROJECT_DIR$/mobile/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/androidx/versionedparcelable/R.class" />
     <entry file="file://$PROJECT_DIR$/mobile/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rhul/dataItem1/MainActivity.class" />
     <entry file="file://$PROJECT_DIR$/mobile/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rhul/dataItem1/R.class" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/fe3d8a710a7d5dd7bc5f1486e24649b0/jars/classes.jar!/play-services-base.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -632,31 +531,46 @@
     <entry file="file://$PROJECT_DIR$/mobile/mobile.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Activity.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Activity.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/WearableListenerService.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="708" column="13" selection-start-line="708" selection-start-column="13" selection-end-line="708" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/DataMap.class">
+    <entry file="file://$PROJECT_DIR$/wear/build/outputs/apk/debug/Datatem1-debug.apk" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5bc0f3bbb87a9da2df55e5e1909fb9a/jars/classes.jar!/android/support/v4/content/LocalBroadcastManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6308">
-          <caret line="403" column="18" selection-start-line="403" selection-start-column="18" selection-end-line="403" selection-end-column="18" />
+        <state relative-caret-position="-1864">
+          <caret line="153" column="41" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/content/Intent.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/MessageClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/PutDataMapRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="214">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/build.gradle">
+    <entry file="file://$PROJECT_DIR$/mobile/build/outputs/apk/debug/Datatem1-debug.apk" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/DataMap.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="38">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -667,78 +581,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/WearableListenerService.class">
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/PutDataRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wear/build/outputs/apk/debug/Datatem1-debug.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5bc0f3bbb87a9da2df55e5e1909fb9a/jars/classes.jar!/android/support/v4/content/LocalBroadcastManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1864">
-          <caret line="153" column="41" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/content/Intent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10013">
-          <caret line="628" column="13" selection-start-line="628" selection-start-column="13" selection-end-line="628" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/MessageClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="186">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/DataClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state relative-caret-position="361">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/MainActivity.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0aba19af3bbdf76c740cfc1716075bd5/jars/classes.jar!/com/google/android/gms/wearable/DataClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="114">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wear/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wear/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#394#412#0" expanded="true" />
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" selection-start-line="23" selection-end-line="26" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        <state relative-caret-position="-341">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2643#2644#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
+            <element signature="e#3768#3991#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/ListenerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-end-line="29" />
+        <state relative-caret-position="342">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/build/outputs/apk/debug/Datatem1-debug.apk">
-      <provider selected="true" editor-type-id="apk-viewer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataItem1/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataItem1/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="107" column="54" lean-forward="true" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

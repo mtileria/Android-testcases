@@ -9,9 +9,6 @@ public class MyService extends WearableListenerService {
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
 
-        String message = new String(messageEvent.getData());
-        Log.i("leak", message);
-    }
-
-}
-
+            String message = new String(messageEvent.getData());
+            Log.i("Leak", message);
+}}

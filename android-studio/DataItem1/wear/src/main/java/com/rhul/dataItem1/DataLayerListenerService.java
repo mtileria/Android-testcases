@@ -2,8 +2,8 @@ package com.rhul.dataItem1;
 
 
 import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.google.android.gms.wearable.DataEvent;
 import com.google.android.gms.wearable.DataEventBuffer;

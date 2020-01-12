@@ -1,8 +1,8 @@
 package com.rhul.simpledataitemold;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.support.wearable.activity.WearableActivity;
 import android.util.Log;
 import android.widget.TextView;
@@ -22,8 +22,8 @@ public class MainActivity extends WearableActivity implements
 
     private TextView mTextView;
     GoogleApiClient googleClient;
-    private static final String PATH = "/my_path";
-    protected final String TAG = "data-items-old-wear";
+    private static final String path = "/my_path";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,10 +58,10 @@ public class MainActivity extends WearableActivity implements
     public void onDataChanged(DataEventBuffer dataEvents){
         for (DataEvent event : dataEvents) {
             if (event.getType() == DataEvent.TYPE_CHANGED) {
-                String path = event.getDataItem().getUri().getPath();
-                if (path.equals(PATH)) {
+                String eventPath = event.getDataItem().getUri().getPath();
+                if (eventPath.equals(path)) {
                     DataMap dataMap = DataMapItem.fromDataItem(event.getDataItem()).getDataMap();
-                    Log.i(TAG,"DataMap received"+ dataMap);
+                    Log.i("Leak", dataMap.getString("deviceID"));
                 }
             }
         }

@@ -5,10 +5,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
@@ -31,7 +30,9 @@ public class MainActivity extends Activity {
 
         messageClient = Wearable.getMessageClient(this);
         deviceId = source();
-        createMessage(deviceId);
+        String nodeId = "*";
+        Task<Integer> sendMessageTask = messageClient
+                .sendMessage(nodeId, "/path", deviceId.getBytes());
 
     }
 
@@ -50,42 +51,5 @@ public class MainActivity extends Activity {
 
 
     }
-
-    public void createMessage(String text) {
-        new NewThread("/my_path", text).start();
-
-    }
-
-    class NewThread extends Thread {
-        String path;
-        String message;
-
-        NewThread(String p, String m) {
-            path = p;
-            message = m;
-        }
-
-        public void run() {
-            Task<List<Node>> wearableList =
-                    Wearable.getNodeClient(getApplicationContext())
-                            .getConnectedNodes();
-            try {
-
-                List<Node> nodes = Tasks.await(wearableList);
-                for (Node node : nodes) {
-                    Task<Integer> sendMessageTask = messageClient
-                            .sendMessage(node.getId(), path, message.getBytes());
-                    Log.i("INFO", message);
-
-                    //Block on a task and get the result synchronously
-                    Tasks.await(sendMessageTask);
-                }
-            } catch (Exception exception) {
-                //TO DO: Handle the exception
-            }
-
-        }
-    }
-
 
 }

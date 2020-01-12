@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -19,31 +18,36 @@ import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
 
-public class MainActivity extends Activity {
+public class MainActivityMobile extends Activity {
 
     private static final int REQUEST_READ_PHONE_STATE = 1;
-    private static final String DEVICE_KEY = "secret";
-    private DataClient dataClient;
-    private TextView textView;
-    private String deviceID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dataClient = Wearable.getDataClient(this);
-        deviceID =  getSensitiveData();
-        synchronizedData(deviceID);
+        String deviceID =  getSensitiveData();
+        String path = "/" + "sync";
+        String key = getKey();
+        synchronizedData(deviceID,path,key);
     }
 
-    private void synchronizedData(String text) {
-        text = text+" ";
-        PutDataMapRequest req = PutDataMapRequest.create("/sync");
-        req.getDataMap().putString(DEVICE_KEY, text);
+    private String getKey(){
+        return "secret";
+    }
+
+    private void synchronizedData(String text,String var, String key) {
+        DataClient dataClient = Wearable.getDataClient(this);
+        Integer number = 1;
+        PutDataMapRequest req = PutDataMapRequest.create(var);
+        req.getDataMap().putString(key, text);
+        req.getDataMap().putInt("number", number);
         PutDataRequest putDataReq = req.asPutDataRequest();
         putDataReq.setUrgent();
         Task<DataItem> putDataTask = dataClient.putDataItem(putDataReq);
-        Log.i("leak",text);
+        if(putDataTask.isSuccessful()){
+            Log.i("success","DataItem sent successfully");
+        }
     }
 
 
@@ -57,7 +61,8 @@ public class MainActivity extends Activity {
                     REQUEST_READ_PHONE_STATE);
         }
         TelephonyManager TM = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-        return deviceID = TM.getImei();
+        return TM.getImei();
     }
+
 
 }

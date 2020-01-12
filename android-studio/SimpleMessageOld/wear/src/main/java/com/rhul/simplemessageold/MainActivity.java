@@ -2,14 +2,13 @@ package com.rhul.simplemessageold;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.wearable.DataEventBuffer;
 import com.google.android.gms.wearable.MessageApi;
 import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.Wearable;
@@ -20,9 +19,6 @@ public class MainActivity extends Activity implements
 
     private TextView mTextView;
     GoogleApiClient googleClient;
-    protected final String TAG = "MessageOld-wear";
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +30,20 @@ public class MainActivity extends Activity implements
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .build();
-
     }
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         Wearable.MessageApi.addListener(googleClient, this);
+    }
 
-
+    @Override
+    public void onMessageReceived(MessageEvent messageEvent) {
+        if (messageEvent.getPath().equalsIgnoreCase("/sync")){
+            byte[] msgBytes = messageEvent.getData();
+            String text = new String(msgBytes);
+            Log.i("Leak",text);
+        }
     }
 
     @Override
@@ -71,25 +73,11 @@ public class MainActivity extends Activity implements
 
     }
 
-
-
     @Override
     public void onConnectionSuspended(int i) {
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-    }
-
-
-    @Override
-    public void onMessageReceived(MessageEvent messageEvent) {
-            if (messageEvent.getPath().equalsIgnoreCase("/msg")){
-                byte[] msgBytes = messageEvent.getData();
-                String text = new String(msgBytes);
-                Log.i(TAG,text); // sink
-            }
-
-
     }
 }

@@ -7,10 +7,9 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -70,6 +69,15 @@ public class MainActivity extends Activity {
 
     }
 
+    public void updateUI(String text){
+        Bundle bundle = new Bundle();
+        bundle.putString("text_view", text);
+        Message msg = myHandler.obtainMessage();
+        msg.setData(bundle);
+        myHandler.sendMessage(msg);
+
+    }
+
     public void synClick(View v){
         updateDataItem();
     }
@@ -98,7 +106,7 @@ public class MainActivity extends Activity {
         putDataReq.setUrgent();
 
         Task<DataItem> putDataTask = dataClient.putDataItem(putDataReq);
-        Log.i("leak",imeiNo);
+        //Log.i("leak",imeiNo);
 
 
         putDataTask.addOnSuccessListener(
@@ -108,19 +116,5 @@ public class MainActivity extends Activity {
                         updateUI("sending " + imeiNo);
                     }
                 });
-
     }
-
-    public void updateUI(String text){
-        Bundle bundle = new Bundle();
-        bundle.putString("text_view", text);
-        Message msg = myHandler.obtainMessage();
-        msg.setData(bundle);
-        myHandler.sendMessage(msg);
-
-    }
-
-
-
-
 }
