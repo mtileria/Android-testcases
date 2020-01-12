@@ -1,0 +1,77 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.google.android.gms.wearable;
+
+import android.app.Activity;
+import android.content.Context;
+import android.net.Uri;
+import android.os.ParcelFileDescriptor;
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.api.GoogleApi;
+import com.google.android.gms.common.api.Releasable;
+import com.google.android.gms.common.api.Api.ApiOptions;
+import com.google.android.gms.common.api.GoogleApi.Settings;
+import com.google.android.gms.tasks.Task;
+import com.google.android.gms.wearable.DataApi.DataListener;
+import com.google.android.gms.wearable.Wearable.WearableOptions;
+import java.io.InputStream;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+public abstract class DataClient extends GoogleApi<WearableOptions> {
+    public static final String ACTION_DATA_CHANGED = "com.google.android.gms.wearable.DATA_CHANGED";
+    public static final int FILTER_LITERAL = 0;
+    public static final int FILTER_PREFIX = 1;
+
+    public DataClient(@NonNull Context var1, @NonNull Settings var2) {
+        super(var1, Wearable.API, (ApiOptions)null, var2);
+    }
+
+    public DataClient(@NonNull Activity var1, @NonNull Settings var2) {
+        super(var1, Wearable.API, (ApiOptions)null, var2);
+    }
+
+    public abstract Task<DataItem> putDataItem(@NonNull PutDataRequest var1);
+
+    public abstract Task<DataItem> getDataItem(@NonNull Uri var1);
+
+    public abstract Task<DataItemBuffer> getDataItems();
+
+    public abstract Task<DataItemBuffer> getDataItems(@NonNull Uri var1);
+
+    public abstract Task<DataItemBuffer> getDataItems(@NonNull Uri var1, int var2);
+
+    public abstract Task<Integer> deleteDataItems(@NonNull Uri var1);
+
+    public abstract Task<Integer> deleteDataItems(@NonNull Uri var1, int var2);
+
+    public abstract Task<DataClient.GetFdForAssetResponse> getFdForAsset(@NonNull Asset var1);
+
+    public abstract Task<DataClient.GetFdForAssetResponse> getFdForAsset(@NonNull DataItemAsset var1);
+
+    public abstract Task<Void> addListener(@NonNull DataClient.OnDataChangedListener var1);
+
+    public abstract Task<Void> addListener(@NonNull DataClient.OnDataChangedListener var1, @NonNull Uri var2, int var3);
+
+    public abstract Task<Boolean> removeListener(@NonNull DataClient.OnDataChangedListener var1);
+
+    public interface OnDataChangedListener extends DataListener {
+        void onDataChanged(@NonNull DataEventBuffer var1);
+    }
+
+    public abstract static class GetFdForAssetResponse implements Releasable {
+        public GetFdForAssetResponse() {
+        }
+
+        public abstract ParcelFileDescriptor getFdForAsset();
+
+        public abstract InputStream getInputStream();
+    }
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface FilterType {
+    }
+}
