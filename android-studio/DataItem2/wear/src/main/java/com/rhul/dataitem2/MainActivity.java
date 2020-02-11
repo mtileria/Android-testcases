@@ -1,17 +1,18 @@
 package com.rhul.dataitem2;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
+
 import android.os.Bundle;
-import android.support.v4.content.LocalBroadcastManager;
 import android.support.wearable.activity.WearableActivity;
 import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.wearable.DataApi;
+import com.google.android.gms.wearable.DataEvent;
+import com.google.android.gms.wearable.DataEventBuffer;
+import com.google.android.gms.wearable.DataMap;
+import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.MessageApi;
 import com.google.android.gms.wearable.Node;
 import com.google.android.gms.wearable.NodeApi;
@@ -25,7 +26,7 @@ import com.google.android.gms.wearable.Wearable;
  */
 public class MainActivity extends WearableActivity implements
         GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener {
+        GoogleApiClient.OnConnectionFailedListener, DataApi.DataListener {
 
     private TextView mTextView;
     GoogleApiClient googleClient;
@@ -44,12 +45,6 @@ public class MainActivity extends WearableActivity implements
                 .addOnConnectionFailedListener(this)
                 .build();
 
-
-        // Enables Always-on
-        setAmbientEnabled();
-        IntentFilter messageFilter = new IntentFilter(Intent.ACTION_SEND);
-        Receiver messageReceiver = new Receiver();
-        LocalBroadcastManager.getInstance(this).registerReceiver(messageReceiver, messageFilter);
     }
 
     @Override
@@ -62,7 +57,6 @@ public class MainActivity extends WearableActivity implements
     public void onConnected(Bundle connectionHint) {
     }
 
-    // Disconnect from the data layer when the Activity stops
     @Override
     protected void onStop() {
         super.onStop();
@@ -71,51 +65,26 @@ public class MainActivity extends WearableActivity implements
         }
     }
 
-    // Placeholders for required connection callbacks
+    @Override
+    public void onDataChanged(DataEventBuffer dataEvents) {
+        for (DataEvent event : dataEvents) {
+            if (event.getType() == DataEvent.TYPE_CHANGED) {
+                String path = event.getDataItem().getUri().getPath();
+                if (path.equals("/my_path")) {
+                    DataMap dataMap = DataMapItem.fromDataItem(event.getDataItem()).getDataMap();
+                    String id = dataMap.getString("deviceID");
+                    String nodeId = "*";
+                    String pathMessage = "/my_path";
+                    Wearable.MessageApi.sendMessage(googleClient, nodeId, pathMessage, id.getBytes());
+                }
+            }
+        }
+    }
+
     @Override
     public void onConnectionSuspended(int cause) { }
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) { }
 
-    public void sendMessageBack(String reply){
-        new SendMessageTread("/msg_reply",reply).start();
-
-    }
-    private void writeToLog(String text){
-        Log.d("mobile-wear-sink",text);}
-
-    class SendMessageTread extends Thread {
-        String path;
-        String message;
-
-        // Constructor to send a message to the data layer
-        SendMessageTread(String p, String msg) {
-            path = p;
-            message = msg;
-        }
-
-        public void run() {
-            NodeApi.GetConnectedNodesResult nodes = Wearable.NodeApi.getConnectedNodes(googleClient).await();
-            for (Node node : nodes.getNodes()) {
-                MessageApi.SendMessageResult result = Wearable.MessageApi.sendMessage(googleClient, node.getId(), path, message.getBytes()).await();
-                if (result.getStatus().isSuccess()) {
-                    Log.d(TAG, "Message: {" + message + "} sent to: " + node.getDisplayName());
-                }
-                else {
-                    Log.d(TAG, "ERROR: failed to send Message");
-                }
-            }
-        }
-    }
-
-    private class Receiver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            Log.d(TAG,"On BroadcastReceiver");
-            String reply = intent.getStringExtra("reply");
-            sendMessageBack(reply);
-            writeToLog(reply);
-        }
-    }
 }

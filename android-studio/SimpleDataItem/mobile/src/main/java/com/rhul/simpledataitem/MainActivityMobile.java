@@ -29,14 +29,22 @@ public class MainActivityMobile extends Activity {
         String deviceID =  getSensitiveData();
         String path = "/" + "sync";
         String key = getKey();
-        synchronizedData(deviceID,path,key);
+
+        DataClient dataClient = Wearable.getDataClient(this);
+        PutDataMapRequest req = PutDataMapRequest.create(path);
+        req.getDataMap().putString(key, deviceID);
+        req.getDataMap().putInt("number", 1);
+        PutDataRequest putDataReq = req.asPutDataRequest();
+        putDataReq.setUrgent();
+        Task<DataItem> putDataTask = dataClient.putDataItem(putDataReq);
+      //  synchronizedData(deviceID, path, key);
     }
 
     private String getKey(){
         return "secret";
     }
 
-    private void synchronizedData(String text,String var, String key) {
+    private void synchronizedData(String text, String var, String key) {
         DataClient dataClient = Wearable.getDataClient(this);
         Integer number = 1;
         PutDataMapRequest req = PutDataMapRequest.create(var);

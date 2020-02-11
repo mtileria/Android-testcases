@@ -12,21 +12,21 @@ import com.google.android.gms.wearable.WearableListenerService;
 
 public class MyService extends WearableListenerService {
 
-    private static final String DEVICE_KEY = "secret";
+    private static final String DEVICE_KEY = "secret_1";
 
     @Override
     public void onDataChanged(DataEventBuffer dataEvents) {
         for (DataEvent event : dataEvents){
             if (event.getType() == DataEvent.TYPE_CHANGED) {
-                DataItem item = event.getDataItem();
+              DataItem item = event.getDataItem();
                 if (item.getUri().getPath().equals("/path_1")) {
                     DataMap dataMap = DataMapItem.fromDataItem(item).getDataMap();
                     Asset asset = dataMap.getAsset(DEVICE_KEY);
                     Log.i("Leak-1", asset.getData().toString());
                 } else if ("/path_2".equals(item.getUri().getPath())){
                     DataMap dataMap = DataMapItem.fromDataItem(item).getDataMap();
-                    Asset asset = dataMap.getAsset("secret_2");
-                    Log.i("Leak-2",asset.getData().toString());
+                    Asset asset2 = dataMap.getAsset("secret_2");
+                    Log.i("Leak-2",asset2.getData().toString());
                 }
             }
         }

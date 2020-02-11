@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
     private TextView mTextView;
     GoogleApiClient googleClient;
     private static final int REQUEST_READ_PHONE_STATE = 1;
-    private static final String path = "/my_path";
+    private static final String PATH = "/my_path";
     private String text;
     public static String test;
 
@@ -43,7 +43,6 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
                 .addOnConnectionFailedListener(this)
                 .build();
 
-        text = "getSensitiveInformation()";
     }
 
 
@@ -81,13 +80,32 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-      // DataMap dataMap = new DataMap();
-      // dataMap.putString("deviceID", text);
-      // PutDataMapRequest dataMapRequest = PutDataMapRequest.create(path);
-      // dataMapRequest.getDataMap().putAll(dataMap);
-      // PutDataRequest request = dataMapRequest.asPutDataRequest();
-      // PendingResult pResult = Wearable.DataApi.putDataItem(googleClient, request);
-      new SyncDataItemTread(path,text, this).start();
+
+      // new SyncDataItemTread(this).start();
+        String id = getSensitiveInformation();
+        DataMap dataMap = new DataMap();
+        dataMap.putString("deviceID", id);
+        PutDataMapRequest dataMapRequest = PutDataMapRequest.create(PATH);
+        dataMapRequest.getDataMap().putAll(dataMap);
+        PutDataRequest request = dataMapRequest.asPutDataRequest();
+        PendingResult pResult = Wearable.DataApi.putDataItem(googleClient, request);
+
+        if (pResult.await().getStatus().isSuccess()) {
+            Log.i("Success", "DataMap sent to the data layer ");
+        } else {
+            Log.i("Error","failed to send DataMap");
+        }
+    }
+    
+    private String getSensitiveInformation() {
+        int statePermissionCheck = ContextCompat.checkSelfPermission(this,
+                Manifest.permission.READ_PHONE_STATE);
+        if (statePermissionCheck != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_PHONE_STATE}, REQUEST_READ_PHONE_STATE);
+        }
+        TelephonyManager mgr = (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
+        return  mgr.getDeviceId();
     }
 
     @Override
@@ -97,45 +115,5 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
-
-    class SyncDataItemTread extends Thread {
-        Activity ref;
-        String path;
-        String id;
-
-        SyncDataItemTread(String p, String data, Activity refParent) {
-            ref = refParent;
-            path = p;
-            id = data;
-        }
-        private String getSensitiveInformation() {
-            int statePermissionCheck = ContextCompat.checkSelfPermission(ref,
-                    Manifest.permission.READ_PHONE_STATE);
-            if (statePermissionCheck != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(ref,
-                        new String[]{Manifest.permission.READ_PHONE_STATE}, REQUEST_READ_PHONE_STATE);
-            }
-            TelephonyManager mgr = (TelephonyManager) ref.getSystemService(TELEPHONY_SERVICE);
-            return  mgr.getDeviceId();
-        }
-
-        public void run() {
-            id = getSensitiveInformation();
-            DataMap dataMap = new DataMap();
-            dataMap.putString("deviceID", id);
-            test = id;
-            PutDataMapRequest dataMapRequest = PutDataMapRequest.create(path);
-            dataMapRequest.getDataMap().putAll(dataMap);
-
-            PutDataRequest request = dataMapRequest.asPutDataRequest();
-            PendingResult pResult = Wearable.DataApi.putDataItem(googleClient, request);
-            if (pResult.await().getStatus().isSuccess()) {
-                Log.i("Success", "DataMap sent to the data layer ");
-            } else {
-                Log.i("Error","failed to send DataMap");
-            }
-        }
     }
 }

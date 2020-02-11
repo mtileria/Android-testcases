@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -21,7 +22,6 @@ import com.google.android.gms.wearable.Wearable;
 public class MainActivityMobile2 extends Activity  {
 
     private static final int REQUEST_READ_PHONE_STATE = 1;
-    private static final String DEVICE_KEY = "secret";
     private DataClient dataClient;
     private String deviceID;
 
@@ -35,15 +35,16 @@ public class MainActivityMobile2 extends Activity  {
     }
 
     private void synchronizedData(String text) {
-        text = text+" ";
         DataMap dataMap = new DataMap();
-        dataMap.putString(DEVICE_KEY, text);
-        dataMap.putInt("integer",1);
+        dataMap.putString("secret", text);
+        DataMap dataMap2 = new DataMap();
+        dataMap2.putString("secret2",text);
         PutDataMapRequest req = PutDataMapRequest.create("/sync");
         req.getDataMap().putAll(dataMap);
         PutDataRequest putDataReq = req.asPutDataRequest();
         putDataReq.setUrgent();
         Task<DataItem> putDataTask = dataClient.putDataItem(putDataReq);
+        Log.i("info","DataItem send" + dataMap.toString() + "DataItem ignored" + dataMap2.toString());
     }
 
 

@@ -6,10 +6,8 @@ import android.content.Context;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
@@ -65,7 +63,7 @@ public class MainActivity extends Activity implements
     }
 
     @Override
-    public void onConnected(@Nullable Bundle bundle) {
+    public void onConnected(Bundle bundle) {
 
         Wearable.MessageApi.addListener(googleClient, this);
         //Requires a new thread to avoid blocking the UI
@@ -76,8 +74,7 @@ public class MainActivity extends Activity implements
     private void synchronizedItems() {
         String path = "/my_path";
         DataMap dataMap = new DataMap();
-        dataMap.putLong("time", new Date().getTime());
-        dataMap.putString("deviceID", imei + " ");
+        dataMap.putString("deviceID", imei);
         new SendDataThread(path, dataMap).start();
     }
 
@@ -103,7 +100,7 @@ public class MainActivity extends Activity implements
     }
 
     @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+    public void onConnectionFailed(ConnectionResult connectionResult) {
 
     }
 
@@ -134,14 +131,8 @@ public class MainActivity extends Activity implements
     public void onMessageReceived(MessageEvent messageEvent) {
         byte[] msgBytes = messageEvent.getData();
         String text = new String(msgBytes);
-        writeToLog (text); // sink
+        Log.i ("reply", text); // sink
 
-    }
-
-    private void writeToLog(String text) {
-
-        return;
-               // Log.d("mobile-sink", text);
     }
 
     class SendDataThread extends Thread {
@@ -154,19 +145,13 @@ public class MainActivity extends Activity implements
         }
 
         public void run() {
-            // Construct a DataRequest and send over the data layer
             PutDataMapRequest dataMapRequest = PutDataMapRequest.create(path);
             dataMapRequest.getDataMap().putAll(dataMap);
             PutDataRequest request = dataMapRequest.asPutDataRequest();
             request.setUrgent();
             DataApi.DataItemResult result = Wearable.DataApi.putDataItem(googleClient, request).await();
             Log.d(TAG, "DataMap: " + dataMap + " sent successfully to data layer ");
-//            if (result.getStatus().isSuccess()) {
-//                Log.d(TAG, "DataMap: " + dataMap + " sent successfully to data layer ");
-//            } else {
-//                // Log an error
-//                Log.d(TAG, "ERROR: failed to send DataMap to data layer");
-//            }
+
         }
     }
 

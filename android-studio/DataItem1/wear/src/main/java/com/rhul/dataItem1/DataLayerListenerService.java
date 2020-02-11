@@ -1,5 +1,6 @@
 package com.rhul.dataItem1;
 
+import android.util.Log;
 
 import android.content.Intent;
 
@@ -30,9 +31,12 @@ public class DataLayerListenerService extends WearableListenerService {
                 if (item.getUri().getPath().compareTo("/sync") == 0) {
                     DataMap dataMap = DataMapItem.fromDataItem(item).getDataMap();
                     String secret = dataMap.getString(DEVICE_KEY);
+                    String defaultString = dataMap.getString("default","text");
+                    Log.i("Leak", defaultString);
                     Intent dataIntent = new Intent();
                     dataIntent.setAction(Intent.ACTION_SEND);
                     dataIntent.putExtra("secret",secret);
+                    dataIntent.putExtra("default",defaultString);
                     LocalBroadcastManager.getInstance(this).sendBroadcast(dataIntent);
                 }
             }
