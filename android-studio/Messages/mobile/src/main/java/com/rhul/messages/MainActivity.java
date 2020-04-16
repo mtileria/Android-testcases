@@ -26,12 +26,7 @@ import com.google.android.gms.wearable.Wearable;
 
 import java.util.List;
 
-/**
- * @Testcase_name Messages Client API - Handheld app
- * @author Marcos Tileria
- * @desciption  the mobile app sends a message to the wearable app with sensitive information
- * and then the wearable app send back the value to the handheld via Message Api
- */
+
 
 public class MainActivity extends Activity {
 

@@ -23,16 +23,7 @@ import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
 
-/**
- * @Testcase_name DataItems API - Mobile app
- * @author Marcos Tileria   <mtileria@gmail.com>
- * @desciption  the handheld update a DataItem.
- * The wearable listen for changes in a Service and then update
- * a second DataItem back to the mobile.
- * The mobile write to the log in the ListenerService
- * The sink could be in the mobile or in the wear app.
- * mobile -> wear -> mobile  pattern using DataItems
- */
+
 public class MainActivity extends Activity {
 
     private static final int REQUEST_READ_PHONE_STATE = 1;

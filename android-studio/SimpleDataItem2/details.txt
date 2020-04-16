@@ -1,0 +1,3 @@
+description: mobile app sync sensitive data to the mobile app using DataItem
+total flow: 2
+sensitive flows: 2

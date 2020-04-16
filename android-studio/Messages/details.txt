@@ -1,0 +1,4 @@
+description:the mobile app sends a message to the wearable app with sensitive information
+ and then the wearable app send back the value to the handheld via Message Api
+total flow: 1
+sensitive flows: 1

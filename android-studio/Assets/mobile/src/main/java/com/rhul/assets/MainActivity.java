@@ -26,12 +26,7 @@ import com.google.android.gms.wearable.Wearable;
 
 import java.io.ByteArrayOutputStream;
 
-/**
- * @Testcase_name Assets API - Mobile app
- * @author Marcos Tileria   <mtileria@gmail.com>
- * @desciption  the handheld update an Asset inside a DataItem.
 
- */
 public class MainActivity extends Activity {
 
 

@@ -1,0 +1,4 @@
+description: mobile app sync sensitive data to the mobile app using MessageClient
+and then back
+total flow: 1
+sensitive flows: 1

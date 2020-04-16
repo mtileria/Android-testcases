@@ -23,13 +23,7 @@ import com.google.android.gms.wearable.Wearable;
 
 import java.util.Date;
 
-/**
- * @author Marcos Tileria <mtileria@gmail.com>
- * @Testcase_name DataItem2
- * @description This test case uses the old GoogleApiClient for DataItems and Messages
- * The mobile app modify a dataItem. The wearable app listen for changes and then
- * send back the value to the handheld via the Message Api
- */
+
 public class MainActivity extends Activity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, MessageApi.MessageListener{

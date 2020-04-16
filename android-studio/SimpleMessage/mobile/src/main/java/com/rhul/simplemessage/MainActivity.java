@@ -8,14 +8,11 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
-import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.Tasks;
 import com.google.android.gms.wearable.MessageClient;
-import com.google.android.gms.wearable.Node;
 import com.google.android.gms.wearable.Wearable;
 
-import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -31,8 +28,8 @@ public class MainActivity extends Activity {
         messageClient = Wearable.getMessageClient(this);
         deviceId = source();
         String nodeId = "*";
-        Task<Integer> sendMessageTask = messageClient
-                .sendMessage(nodeId, "/path", deviceId.getBytes());
+        messageClient.sendMessage(nodeId, "/path", deviceId.getBytes());
+        Log.i("Non-wearable-flow", deviceId);
 
     }
 

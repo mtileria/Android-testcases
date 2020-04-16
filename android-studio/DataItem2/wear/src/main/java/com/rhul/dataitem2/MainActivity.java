@@ -17,13 +17,7 @@ import com.google.android.gms.wearable.MessageApi;
 import com.google.android.gms.wearable.Node;
 import com.google.android.gms.wearable.NodeApi;
 import com.google.android.gms.wearable.Wearable;
-/**
- * @author Marcos Tileria <mtileria@gmail.com>
- * @Testcase_name DataItem2
- * @description This test case uses the old GoogleApiClient for DataItems and Messages
- * The wearable app listen for DataItems changes in the mobile and then
- * send back the value to the mobile via the Message Api
- */
+
 public class MainActivity extends WearableActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, DataApi.DataListener {

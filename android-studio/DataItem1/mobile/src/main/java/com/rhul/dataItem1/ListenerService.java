@@ -9,10 +9,7 @@ import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.WearableListenerService;
 
-/**
- * Listen for DataItems from the Wearable  with the path /sync_wear defined in Manifest
- * Write to a sink
- */
+
 public class ListenerService extends WearableListenerService {
 
     final static String TAG = "mobile-service";

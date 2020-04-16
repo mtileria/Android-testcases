@@ -14,11 +14,7 @@ import com.google.android.gms.wearable.WearableListenerService;
 
 import java.util.ArrayList;
 
-/**
- * Listen for changes in DataItems from the mobile app with the
- * path /sync (defined in the Manifest)
- * Send a broadcast to the MainActivity to inform changes on DataItems
- */
+
 public class DataLayerListenerService extends WearableListenerService {
 
     private static final String PATH_DATA = "/sync";

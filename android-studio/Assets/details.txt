@@ -1,0 +1,3 @@
+description: wearable app sends sensitive data to the mobile app using Assets
+total flow: 2
+sensitive flows: 2

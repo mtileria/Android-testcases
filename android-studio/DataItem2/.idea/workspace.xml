@@ -7,36 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c27231d-d79f-41c9-991a-52dcaa271289" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Assets/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_wearable_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/.idea/libraries/Gradle__com_google_android_gms_play_services_wearable_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/mobile/src/main/java/com/rhul/assets/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assets/mobile/src/main/java/com/rhul/assets/MyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataItem1/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DataItem1/wear/src/main/java/com/rhul/dataItem1/DataLayerListenerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_wearable_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_wearable_16_0_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_support_wearable_2_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_support_wearable_2_4_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/src/androidTest/java/com/rhul/dataitem2/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/androidTest/java/com/rhul/dataitem2/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataitem2/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataitem2/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/wear/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wear/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataitem2/ListenerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataitem2/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/wear/src/main/java/com/rhul/dataitem2/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wear/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InterDataItem/mobile/src/main/java/com/rhul/interdataitem/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InterDataItem/mobile/src/main/java/com/rhul/interdataitem/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleDataItem2/mobile/src/main/java/com/rhul/simpledataitem2/MainActivityMobile2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItem2/mobile/src/main/java/com/rhul/simpledataitem2/MainActivityMobile2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SimpleDataItemOld/mobile/src/main/java/com/rhul/simpledataitemold/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleDataItemOld/mobile/src/main/java/com/rhul/simpledataitemold/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/java/com/rhul/simplemessage/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleMessage/mobile/src/main/java/com/rhul/simplemessage/MainActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataitem2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1661">
+            <state relative-caret-position="2451">
               <caret line="150" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataitem2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+            <state relative-caret-position="140">
+              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,6 +86,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,40 +98,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="DataItem2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="mobile" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="DataItem2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="mobile" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="DataItem2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="mobile" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="mobile" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="rhul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataItem2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="mobile" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="rhul" type="462c0819:PsiDirectoryNode" />
-              <item name="dataitem2" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="DataItem2" type="1abcf292:AndroidViewProjectNode" />
               <item name="wear" type="feadf853:AndroidModuleNode" />
@@ -193,7 +142,7 @@
     <property name="device.picker.selection" value="BSUBB18A19152013" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1581268059320" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1582888121355" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -339,8 +288,8 @@
     <frame x="0" y="23" width="1440" height="806" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Captures" order="0" sideWeight="0.50481695" side_tool="true" visible="true" weight="0.18955651" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49518305" visible="true" weight="0.18955651" />
+      <window_info id="Captures" order="0" sideWeight="0.5067437" side_tool="true" visible="true" weight="0.18955651" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49325627" visible="true" weight="0.18955651" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -391,21 +340,21 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b6ef6757f87e491f9a462666fd51f88/jars/classes.jar!/com/google/android/gms/wearable/Wearable.class" />
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c690b4c2e0b3cc4ebd9eec149c55356/jars/classes.jar!/com/google/android/gms/common/api/GoogleApiClient.class" />
     <entry file="file://$PROJECT_DIR$/wear/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataitem2/ListenerService.java" />
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/rhul/dataitem2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1661">
+        <state relative-caret-position="2451">
           <caret line="150" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -415,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/rhul/dataitem2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+        <state relative-caret-position="140">
+          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,0 +1,4 @@
+description: mobile app synchronizes a DataItem with sensitive information.
+Then the wearable app send the same information using a MessageClient
+total flow: 1
+sensitive flows: 1

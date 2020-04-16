@@ -21,15 +21,7 @@ import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
 
-/**
- * @Testcase_name DataItems API - Mobile app
- * @author Marcos Tileria   <mtileria@gmail.com>
- * @desciption  The wearable listen for a sync from the mobile.
- * and then update a second DataItem back to the mobile.
- * The sink could be in the mobile or in the wear app.
- * mobile -> wear -> mobile  pattern using DataItems
- * A Broadcast receiver send the data from the service to the MainActivity
- */
+
 public class MainActivity extends WearableActivity {
 
     private TextView mTextView;

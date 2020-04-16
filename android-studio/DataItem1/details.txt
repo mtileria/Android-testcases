@@ -1,0 +1,4 @@
+description: wearable app sends sensitive data to the mobile app using DataItems.
+Then send the data from a service to an activity using BroadcastReceiver
+total flow: 1
+sensitive flows: 1
